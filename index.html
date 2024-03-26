@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+            .btn{
+                transition: width 2s, height 2s;
+            }
+            
+            .btn:hover{
+                width: 230px;
+                height: 65px;
+            }
+            
+            .form__button{
+                transition: width 2s, height 2s;
+            }
+
+            .form__button:hover{
+                width: 345px;
+                height: 60px;
+            }
+
+            .btn{
+                animation-name: switch__color;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+
+            h2{
+                animation-name: font__color;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            
+            
+
+            @keyframes switch__color{
+                33%{
+                    background-color: rgb(233,186,46);
+                }
+
+                66%{
+                    background-color: rgb(200,100,40);
+                }
+                
+                100%{
+                    background-color: rgb(233,186,46);
+                }
+
+            }
+
+            @keyframes font__color{
+                33%{
+                    color: black;
+                }
+
+                66%{
+                    color: red;
+                }
+
+                100%{
+                    color: black;
+                }
+            }
+    </style>
+</head>
+
+<body>
+        <header>
+            <div class="container">
+                <img class="logo animate__animated animate__pulse" src="img/logo.png" alt="err">
+                <div class="wrapper">
+                    <div class="offer">
+                        <h1 class="title">С помощью нас <br>
+                            вы сможете создать то, о чем</h1>
+                            <span class="title__span">желаете!</span>
+                            <p class="offer__text">Наши возможности
+                            + опыт позволят Вам достичь огромного
+                            успеха. Мы верим в вас! И знаем это на
+                            все 100%. Вас не остановить!</p>
+                            <a href="#" class="btn">Узнать больше...
+                            </a>
+                    </div>
+                    <img class="header__img animate__animated animate__shakeX" src="img/header-img.png" alt="err">
+                </div>
+             </div>
+        </header>
+
+
+
+        <section class="main">
+            <div class="container">
+                <h2 class="main__title">Что вам необходимо?</h2>
+                <div class="main__blocks">
+
+                    <div class="block">
+                        <img class="block__img" src="img/f3.png" alt="err">
+                        <h3>Первый блок</h3>
+                        <p class="block__text">Lorem, ipsum dolor sit amet consectetur <br> adipiscing elit</p>
+                    </div>
+
+                    <div class="block">
+                        <img class="block__img" src="img/f4.png" alt="err">
+                        <h3>Второй блок</h3>
+                        <p class="block__text">Lorem, ipsum dolor sit amet consectetur <br> adipiscing elit</p>
+                    </div>
+
+                    <div class="block">
+                        <img class="block__img" src="img/f5.png" alt="err">
+                        <h3>Третий блок</h3>
+                        <p class="block__text">Lorem, ipsum dolor sit amet consectetur <br> adipiscing elit</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="slave">
+            <div class="container">
+                <form class="main_form" action="#" method="get" enctype="multipart/form-data">
+                <h2 class="form__title">Форма заказа обратного звонка</h2>
+                <div class="form__group">
+
+                        <div class="form">
+                            <input class="form__input" type="text" name="name" placeholder="Имя" required>
+                        </div>
+                        
+                        <div class="form">
+                            <input class="form__input" type="text" name="email" placeholder="Введите свой E-mail" required>
+                        </div>
+
+                        <div class="form">
+                            <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
+                        </div>
+
+                        <div class="form">
+                            <input class="form__input" type="text" name="topic" placeholder="Какая тема вас интересует?" required>
+                        </div>
+                        
+                        
+                        <button class="form__button" type="submit">Отправить вопрос!</button>
+                        
+                </div>
+                </form> 
+            </div>
+        </section>
+
+
+        <section class="ending">
+            <div class="container">  
+                <div class="ending__title">
+                    © Все на этом сайте защищено
+                </div>
+            </div>  
+        </section>
+</body>
+</html>
